@@ -1,0 +1,13 @@
+<h1>Tareas listar</h1>
+
+<ul>
+   <% @tarea.each do |t| %>
+   <p>
+      <h3> <%= t.titulo %>
+      	<%= t.descripcion %> </h3>
+   </p>
+   <% end %>
+</ul>
+
+<p><%=link_to "Crear nueva tarea", new_tarea_path%></p>
+

@@ -1,0 +1,16 @@
+<%= form_for @tarea do |f| %> 
+   <p> 
+      <%= f.label :tituloLabel, "Título" %>
+      <br />
+      <%= f.text_field :titulo, {:value => @titulo} %>
+   </p>
+   <p> 
+      <%= f.label :descripcionLabel, "Descripción" %>
+      <br />
+      <%= f.text_field :descripcion, {:value => @descripcion} %>
+   </p>
+   
+   <p>
+      <%= f.submit "Enviar" %> <%= link_to "Cancelar", tareas_path %>
+   </p>
+<% end %>
